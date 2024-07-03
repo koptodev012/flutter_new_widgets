@@ -100,18 +100,18 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       titleName,
-                      style: TextStyle(color: Colors.blue),
+                      style: const TextStyle(color: Colors.blue),
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ListView.builder(
               shrinkWrap: true,
-              physics: ClampingScrollPhysics(),
+              physics: const ClampingScrollPhysics(),
               itemCount: url.length,
               itemBuilder: (context, index) {
                 return GestureDetector(
@@ -129,7 +129,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                           ),
                           title: Text(
                             url[index]["videoName"],
-                            style: TextStyle(color: Colors.black),
+                            style: const TextStyle(color: Colors.black),
                           ),
                         )),
                   ),
