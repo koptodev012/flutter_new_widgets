@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_design/presentation/custom_bottom_sheet/home_scree.dart';
+import 'package:responsive_design/presentation/display_chart/model/student_attendenceModel.dart';
+import 'package:responsive_design/presentation/display_chart/student_attendence_Tracker_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: HomeScreen2(),
+      home: StudentAttendenceTrackerScreen(
+        students: [
+          StudentAttendanceModel(name: 'Alice', attended: 8, missed: 2),
+          StudentAttendanceModel(name: 'Bob', attended: 7, missed: 3),
+          StudentAttendanceModel(name: 'Charlie', attended: 9, missed: 1),
+          // Add more students as needed
+        ],
+      ),
     );
   }
 }
