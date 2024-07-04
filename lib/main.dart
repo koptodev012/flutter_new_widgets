@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_design/video_player_screen.dart';
+import 'package:responsive_design/presentation/custom_bottom_sheet/custom_bottomSheet.dart';
+import 'package:responsive_design/presentation/custom_bottom_sheet/home_scree.dart';
+import 'package:responsive_design/presentation/responsive_design/responsive_design.dart';
+import 'package:responsive_design/presentation/video_player/video_player_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const VideoPlayerScreen(),
+      home: HomeScreen2(),
     );
   }
 }
