@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_design/presentation/custom_bottom_sheet/home_scree.dart';
-import 'package:responsive_design/presentation/display_chart/model/student_attendenceModel.dart';
-import 'package:responsive_design/presentation/display_chart/student_attendence_Tracker_screen.dart';
-import 'package:responsive_design/presentation/draggable_container/draggable_screen.dart';
-import 'package:responsive_design/presentation/navigation_bar/navigation_bar_screen.dart';
-import 'package:responsive_design/presentation/snackbar/snackbar.dart';
+import 'package:responsive_design/features/navigation_bar/navigation_bar_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,13 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Widgets',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: NavigationBarScreen(),
+      home: const NavigationBarScreen(),
 
       //! ------------------- for using StudentAttendenceTrackerScreen ----------------
 

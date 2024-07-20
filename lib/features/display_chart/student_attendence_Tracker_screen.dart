@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:responsive_design/presentation/display_chart/model/student_attendenceModel.dart';
+import 'package:responsive_design/features/display_chart/model/student_attendenceModel.dart';
 
 class StudentAttendenceTrackerScreen extends StatefulWidget {
   final List<StudentAttendanceModel> students;
@@ -27,14 +27,14 @@ class _StudentAttendenceTrackerScreenState
         color: Colors.green,
         title: 'Attended',
         radius: 50,
-        titleStyle: TextStyle(color: Colors.white, fontSize: 16),
+        titleStyle: const TextStyle(color: Colors.white, fontSize: 16),
       ),
       PieChartSectionData(
         value: totalMissed.toDouble(),
         color: Colors.red,
         title: 'Missed',
         radius: 50,
-        titleStyle: TextStyle(color: Colors.white, fontSize: 16),
+        titleStyle: const TextStyle(color: Colors.white, fontSize: 16),
       ),
     ];
   }
@@ -44,7 +44,7 @@ class _StudentAttendenceTrackerScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Student Attendance')),
+      appBar: AppBar(title: const Text('Student Attendance')),
       body: Column(
         children: [
           Expanded(

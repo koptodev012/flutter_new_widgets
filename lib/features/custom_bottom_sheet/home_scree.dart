@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_design/presentation/custom_bottom_sheet/custom_bottomSheet.dart';
+import 'package:responsive_design/features/custom_bottom_sheet/custom_bottomSheet.dart';
 
 class HomeScreen2 extends StatefulWidget {
   const HomeScreen2({super.key});

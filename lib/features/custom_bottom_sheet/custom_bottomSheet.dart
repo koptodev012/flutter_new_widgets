@@ -14,7 +14,7 @@ class _CustomBottomSheetScreenState extends State<CustomBottomSheetScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       child: ListView.builder(
         shrinkWrap: true,
         itemCount: widget.items.length,

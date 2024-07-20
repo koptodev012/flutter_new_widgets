@@ -19,17 +19,6 @@ class _DraggableScreenState extends State<DraggableScreen> {
         children: <Widget>[
           Draggable<Color>(
             data: Colors.blue,
-            child: Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.blue,
-              child: const Center(
-                child: Text(
-                  'Drag me',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
             feedback: Container(
               width: 100.0,
               height: 100.0,
@@ -48,6 +37,17 @@ class _DraggableScreenState extends State<DraggableScreen> {
               child: const Center(
                 child: Text(
                   'Original',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+            child: Container(
+              width: 100.0,
+              height: 100.0,
+              color: Colors.blue,
+              child: const Center(
+                child: Text(
+                  'Drag me',
                   style: TextStyle(color: Colors.white),
                 ),
               ),

@@ -12,10 +12,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     //! ------------------------------------------------------------------
     var currentWidth = MediaQuery.of(context).size.width;
-    var currentHeight = MediaQuery.of(context).size.height;
+    // var currentHeight = MediaQuery.of(context).size.height;
 
     var screenWidth = currentWidth < 600;
-    var screenHeight = currentHeight < 500;
+    // var screenHeight = currentHeight < 500;
 
     List<String> images = [
       "https://uae.microless.com/cdn/no_image.jpg",
